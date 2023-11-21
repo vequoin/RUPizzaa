@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.group27.RUPizza.MainController">
+
+    <!-- Top Menu Bar -->
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <!-- Add items like 'Exit' here -->
+            </Menu>
+            <Menu text="Help">
+                <!-- Add items like 'About' here -->
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <!-- Side Menu Buttons -->
+    <left>
+        <VBox spacing="10" alignment="CENTER">
+            <Button text="Order Specialty Pizzas" fx:id="btnSpecialty" maxWidth="1000" />
+            <Button text="Build Your Own Pizza" fx:id="btnCustom" maxWidth="1000" />
+            <Button text="Browse Current Order" fx:id="btnCurrentOrder" maxWidth="1000" />
+            <Button text="Browse Store Orders" fx:id="btnStoreOrders" maxWidth="1000" />
+        </VBox>
+    </left>
+
+    <!-- Main Content Area -->
+    <center>
+        <StackPane fx:id="contentArea">
+            <!-- The content will be dynamically loaded here based on the menu selection -->
+        </StackPane>
+    </center>
+
+    <!-- Status Bar at Bottom -->
+    <bottom>
+        <HBox>
+            <Label text="Status: Ready" />
+            <!-- Additional status bar elements here -->
+        </HBox>
+    </bottom>
+
+</BorderPane>
