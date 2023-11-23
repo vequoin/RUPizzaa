@@ -2,8 +2,18 @@ package com.group27.RUPizza.model;
 
 public class Deluxe extends Pizza{
 
+    public Deluxe(){
+        super();
+        addTopping(Topping.PEPPERONI);
+        addTopping(Topping.SAUSAGE);
+        addTopping(Topping.MUSHROOMS);
+        addTopping(Topping.GREEN_PEPPERS);
+        addTopping(Topping.ONIONS);
+        setSauce(Sauce.TOMATO);
+    }
+
     @Override
     public double price() {
-        return 0;
+        return 14.99;
     }
 }
